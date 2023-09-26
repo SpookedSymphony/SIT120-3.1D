@@ -1,0 +1,19 @@
+label {
+    padding: 10px;
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.todo-list {
+    padding-left: 0; /* Remove default list padding */
+    list-style: square; /* Remove default list styles */
+}
+
+.todo-list li {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+}

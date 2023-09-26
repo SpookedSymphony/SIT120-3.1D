@@ -1,0 +1,48 @@
+p {
+    font-size: small;
+    color: teal;
+
+}
+
+h1 {
+    font-size: 50px; 
+    text-align: center;
+}
+
+.centered-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-bottom: 50px !important;
+    margin: auto;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 60px;
+    padding: 5px;
+    background-color: teal;
+    color: white;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    cursor:pointer;
+}
+
+button:hover {
+    background-color: white;
+    color: teal;
+}
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 100% !important;
+    height: 100px !important;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: lightcyan;
+    font-size: 12px;
+}
