@@ -1,14 +1,12 @@
 <script setup>
     import Footer from '../components/Footer.vue'
-    import { ref, reactive, computed, watch } from 'vue'
+    import BetterButton from '../components/BetterButton.vue';
+    import { ref } from 'vue'
     import '@/assets/style.css';
   
     const messagea = ref(''); 
     const messageb = ref(''); 
-
-    function say(message) { 
-    alert(message)
-  }
+    const checked = ref('')
 
 </script>
 
@@ -27,10 +25,17 @@
                 <input v-model.trim="messageb" placeholder="email@email.com" />
                 <p>Thank you! Your email is... <br>{{ messageb }}</p> <br>
 
+                <h4>Do you want promotions?</h4>
+                <input type=checkbox id=promo value=yes v-model="checked"/>
+                <label for promo>Yes</label>
+                <p>Thank you! You have selected: <br>{{ checked }}</p> <br>
+
                 <h4>Please enter your question:</h4>
                 <textarea required style=resize:none;></textarea>
 
-                <button @click="say('Thank you! We will get back to you shortly.')">Submit</button>
+                <BetterButton>
+                    Submit
+                </BetterButton>
             </form>
         </div>
         <Footer/>
