@@ -32,7 +32,7 @@
     <div 
     class="spanned" 
     :style="{fontSize: font + 'px', textAlign: align}">
-      <span>{{ begin + ' ' + here }}</span> <!-- 1d. Javascript inside syntax -->
+      <span>{{ begin + ' ' + here }}</span>
     </div>
 
     <p style: padding="30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna eget tristique. Maecenas sagittis massa id ante dignissim, ac interdum odio pellentesque. Nullam et enim in tortor varius interdum. Aliquam erat volutpat. Integer dapibus, odio a mattis varius, ex erat viverra ipsum, id gravida lorem odio a libero. Vestibulum vehicula massa eget magna semper, a tincidunt elit convallis. Proin pellentesque malesuada libero, eget rhoncus libero malesuada ut. Nulla facilisi. Fusce placerat nec est a ullamcorper. Etiam non erat sit amet metus fermentum varius. Vivamus non ullamcorper est, in bibendum ligula. Curabitur sed ligula non sapien suscipit dapibus in vel purus.
