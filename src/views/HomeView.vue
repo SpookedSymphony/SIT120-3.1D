@@ -1,7 +1,15 @@
 <script setup>
+  import { ref } from 'vue'
   import Header from '../components/Header.vue' 
   import Footer from '../components/Footer.vue'
   import chatbot from '../components/chatbot.vue'
+
+  const html = '<h1 style="color: darksalmon";> Explore Our Mission </h1>'
+  const begin = 'Begin'; 
+  const here = 'Here';
+
+  const font = ref(25);
+  const align = ref('center');
 </script>
 
 <style scoped>
@@ -18,6 +26,14 @@
 
     <Header/>
     <chatbot/>
+
+      <span v-html="html"></span>
+   
+    <div 
+    class="spanned" 
+    :style="{fontSize: font + 'px', textAlign: align}">
+      <span>{{ begin + ' ' + here }}</span> <!-- 1d. Javascript inside syntax -->
+    </div>
 
     <p style: padding="30px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat urna eget tristique. Maecenas sagittis massa id ante dignissim, ac interdum odio pellentesque. Nullam et enim in tortor varius interdum. Aliquam erat volutpat. Integer dapibus, odio a mattis varius, ex erat viverra ipsum, id gravida lorem odio a libero. Vestibulum vehicula massa eget magna semper, a tincidunt elit convallis. Proin pellentesque malesuada libero, eget rhoncus libero malesuada ut. Nulla facilisi. Fusce placerat nec est a ullamcorper. Etiam non erat sit amet metus fermentum varius. Vivamus non ullamcorper est, in bibendum ligula. Curabitur sed ligula non sapien suscipit dapibus in vel purus.
 
